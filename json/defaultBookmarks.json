@@ -1,8 +1,18 @@
 {
+    "Dev": {
+        "DevDocs": "https://devdocs.io/",
+        "mdn": "https://developer.mozilla.org",
+        "w3schools": "https://www.w3schools.com"
+    },
     "Entertainment": {
-        "netflix": "https://www.netflix.com/browse",
-        "twitch": "https://www.twitch.tv",
-        "youtube": "https://www.youtube.com"
+        "Netflix": "https://www.netflix.com/browse",
+        "Twitch": "https://www.twitch.tv",
+        "YouTube": "https://www.youtube.com"
+    },
+    "Reddit": {
+        "r/homelab": "https://www.reddit.com/r/homelab/",
+        "r/startpages": "https://www.reddit.com/r/startpages/",
+        "r/unixporn": "https://www.reddit.com/r/unixporn/"
     },
     "Socials": {
         "Discord": "https://discord.com/app/",
@@ -10,5 +20,10 @@
         "Mastodon": "https://mastodon.social/explore",
         "Reddit": "https://www.reddit.com/",
         "Twitter": "https://twitter.com/home"
+    },
+    "Typing": {
+        "MonkeyType": "https://monkeytype.com",
+        "TypingClub": "https://www.typingclub.com",
+        "ZType": "https://zty.pe"
     }
 }
