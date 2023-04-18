@@ -1,0 +1,14 @@
+{
+    "Entertainment": {
+        "netflix": "https://www.netflix.com/browse",
+        "twitch": "https://www.twitch.tv",
+        "youtube": "https://www.youtube.com"
+    },
+    "Socials": {
+        "Discord": "https://discord.com/app/",
+        "LinkedIn": "https://www.linkedin.com/",
+        "Mastodon": "https://mastodon.social/explore",
+        "Reddit": "https://www.reddit.com/",
+        "Twitter": "https://twitter.com/home"
+    }
+}
