@@ -8,12 +8,41 @@
     transform: translateX(-50%);
     border-radius: 3vh;
     display: flex;
-    justify-content: stretch;
+    justify-content: space-around;
     text-decoration: none;
     font-size: 1.4rem;
     text-align: center;
     color: var(--text-color);
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.bookmarks-container>* {
+    flex: 1;
+}
+
+.category-container a {
+    display: flex;
     flex-direction: column;
+    color: var(--text-color);
+    text-decoration: none;
+}
+
+.category-container a::after {
+    display: block;
+    content: "";
+    position: relative;
+    height: 5px;
+    width: 0%;
+    background-color: var(--purple-highlighter);
+    border-radius: 50vh;
+    left: 50%;
+    transition: 500ms;
+}
+
+.category-container a:hover::after {
+    width: 100%;
+    left: 0;
 }
 
 #bookmarks-container>#random-quote {
