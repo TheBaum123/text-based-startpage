@@ -23,9 +23,9 @@ searchInputField.addEventListener("change", () => {
 function search() {
     if(!userSearchInput) return
     userSearchInput = encodeURIComponent(document.getElementById("search-input").value)
-    if(Object.keys(availableDirectLinks).includes(userSearchInput)) {
+    if(Object.keys(availableDirectLinks).includes(decodeURIComponent(userSearchInput))) {
         window.location.assign(availableDirectLinks[userSearchInput])
-    } if(validateIP.test(userSearchInput) || validIPWithPort.test(userSearchInput)) {
+    } else if(validateIP.test(userSearchInput) || validIPWithPort.test(userSearchInput)) {
         window.location.assign("http://" + userSearchInput)
     } else if(validateURL.test(userSearchInput)) {
         window.location.assign(userSearchInput)
