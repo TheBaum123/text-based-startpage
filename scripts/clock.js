@@ -1,9 +1,18 @@
-let clockSeperator = localStorage.getItem("text-startpage:clockSeperator")
-if(clockSeperator == "" || clockSeperator == null) {
-    clockSeperator = "|"
-}
+//wait for other scripts to load first
+setTimeout(() => {
+    if(clockSeperator == "" || clockSeperator == null) {
+        clockSeperator = "|"
+    }
+    updateTime()
+}, 10);
 
+//update clock every second
 const clockInterval = setInterval(() => {
+    updateTime()
+}, 1000);
+
+//function to update the clock
+function updateTime() {
     let time = new Date()
     let monthNames =
     [
@@ -16,8 +25,9 @@ const clockInterval = setInterval(() => {
     let outputDate = `${twoDigit(time.getDate())} ${clockSeperator} ${monthNames[time.getMonth()]} ${clockSeperator} ${time.getFullYear()}`
     $("#greetings-container>:nth-child(2)>:first-child").html(outputTime)
     $("#greetings-container>:nth-child(2)>:last-child").html(outputDate)
-}, 1000);
+}
 
+//function to prefix single digit numbers with 0 for consistancy
 function twoDigit(num) {
     fixedNum = 0
     if(num.toString().length == 1) {
