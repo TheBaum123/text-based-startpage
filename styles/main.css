@@ -12,7 +12,7 @@ body {
     background-color: var(--background-color);
 }
 
-span {
+.greetings-span {
     color: var(--text-color);
     font-size: 2rem;
 }
