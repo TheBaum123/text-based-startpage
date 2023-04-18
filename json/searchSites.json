@@ -1,0 +1,17 @@
+{
+    "amazon": "https://www.amazon.com/s?k=",
+    "az": "https://www.amazon.com/s?k=",
+    "gh": "https://www.github.com/search?q=",
+    "mdn": "https://developer.mozilla.org/search?q=",
+    "netflix": "https://www.netflix.com/search?q=",
+    "reddit": "https://www.reddit.com/search?q=",
+    "spotify": "https://open.spotify.com/search/",
+    "ttv": "https://www.twitch.tv/search?term=",
+    "twitch": "https://www.twitch.tv/search?term=",
+    "web docs": "https://developer.mozilla.org/search?q=",
+    "webdocs": "https://developer.mozilla.org/search?q=",
+    "wiki": "https://www.wikipedia.org/w/index.php?search=",
+    "wikipedia": "https://www.wikipedia.org/w/index.php?search=",
+    "youtube": "https://www.youtube.com/results?search_query=",
+    "yt": "https://www.youtube.com/results?search_query="
+}

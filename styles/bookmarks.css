@@ -1,0 +1,19 @@
+#bookmarks-container {
+    height: 50%;
+    width: 50%;
+    background-color: var(--purple-background-color);
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 3vh;
+}
+
+#bookmarks-container>#random-quote {
+    position: absolute;
+    bottom: 0;
+    text-align: center;
+    width: 80%;
+    left: 10%;
+    font-size: 1.2rem;
+}

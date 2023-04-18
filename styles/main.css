@@ -1,0 +1,18 @@
+:root {
+    --background-color: #062726;
+    --purple-background-color: #102B3F;
+    --text-color: #E0E2DB;
+    --search-text-color: #E2CFEA;
+    --purple-highlighter: #6247AA;
+    font-family: 'Roboto Mono', monospace;
+}
+
+body {
+    overflow: hidden;
+    background-color: var(--background-color);
+}
+
+span {
+    color: var(--text-color);
+    font-size: 2rem;
+}

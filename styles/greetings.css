@@ -1,0 +1,14 @@
+#greetings-container {
+    position: absolute;
+    top: 2.5vh;
+    left: 50vw;
+    width: 50vw;
+    height: 15vh;
+    text-align: center;
+    background-color: var(--purple-background-color);
+    border-radius: 3vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    transform: translateX(-50%);
+}
