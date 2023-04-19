@@ -18,6 +18,24 @@ body {
     font-size: 2rem;
 }
 
+ion-icon[name="settings-outline"] {
+    color: var(--text-color);
+    font-size: 3rem;
+    position: absolute;
+    top: 2%;
+    right: 2%;
+    background-color: var(--purple-background-color);
+    border: var(--search-text-color) 3px solid;
+    border-radius: 50vh;
+    padding: 1%;
+    transition: 250ms;
+}
+
+ion-icon[name="settings-outline"]:hover {
+    background-color: var(--purple-highlighter);
+    transform: scale(1.25);
+}
+
 @media (prefers-color-scheme: light) {
     :root {
         --background-color: #fef5;
