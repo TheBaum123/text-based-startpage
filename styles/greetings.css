@@ -1,6 +1,6 @@
 #greetings-container {
     position: absolute;
-    top: 2.5vh;
+    top: -100vh;
     left: 50vw;
     width: 50vw;
     height: 15vh;
@@ -11,4 +11,9 @@
     justify-content: center;
     flex-direction: column;
     transform: translateX(-50%);
+}
+
+#greetings-container>:nth-child(2) {
+    position: relative;
+    top: -100vh;
 }

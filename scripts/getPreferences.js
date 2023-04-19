@@ -11,6 +11,7 @@ let greetingName = localStorage.getItem("text-startpage:greetingName")
 
 //clock
 let clockSeperator = localStorage.getItem("text-startpage:clockSeperator")
+let enableClock = localStorage.getItem("text-startpage:enableClock")
 
 //bookmarks
 let bookmarks = JSON.parse(localStorage.getItem("text-startpage:bookmarks"))
