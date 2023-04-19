@@ -1,3 +1,19 @@
+let scriptsToInject = []
+let stylesToInject = []
+
+for(let i = 0; i < scriptsToInject.length; i++) {
+    let scriptToInject = document.createElement("script")
+    scriptToInject.src = `scripts/preferences/${scriptsToInject[i]}.js`
+    document.body.appendChild(scriptToInject)
+}
+
+for(let i = 0; i < stylesToInject.length; i++) {
+    let styleToInject = document.createElement("link")
+    styleToInject.href = `styles/preferences/${stylesToInject[i]}.css`
+    styleToInject.rel = "stylesheet"
+    document.head.appendChild(styleToInject)
+}
+
 let ionicons1 = document.createElement("script")
 ionicons1.type = "module"
 ionicons1.src = "https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
