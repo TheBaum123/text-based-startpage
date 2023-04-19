@@ -44,4 +44,5 @@ ion-icon[name="settings-outline"] {
 ion-icon[name="settings-outline"]:hover {
     background-color: var(--purple-highlighter);
     transform: scale(1.25);
+    cursor: pointer;
 }
