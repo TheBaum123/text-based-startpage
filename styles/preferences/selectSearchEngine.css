@@ -1,0 +1,23 @@
+#search-engine-select-container {
+    width: 98vw;
+    height: 20vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: var(--purple-highlighter) 5px solid;
+    border-radius: 10px;
+    background-color: var(--purple-background-color);
+    gap: 5%;
+    font-size: 2rem;
+    color: var(--text-color);
+}
+
+#search-engine-select {
+    font-size: 3rem;
+    color: var(--text-color);
+    text-align: center;
+    border: var(--purple-highlighter) 5px solid;
+    border-radius: 10px;
+    background-color: var(--purple-background-color);
+}

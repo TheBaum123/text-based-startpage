@@ -1,0 +1,24 @@
+:root {
+    --background-color: #062726;
+    --purple-background-color: #102B3F;
+    --text-color: #E0E2DB;
+    --purple-text-color: #E2CFEA;
+    --purple-highlighter: #6247AA;
+    font-family: 'Roboto Mono', monospace;
+}
+
+@media (prefers-color-scheme: light) {
+    :root {
+        --background-color: #fef5;
+        --purple-background-color: #feff;
+        --text-color: #323f;
+        --search-text-color: #535f53;
+        --purple-highlighter: #649f;
+    }
+}
+
+body {
+    overflow: hidden;
+    background-color: var(--background-color);
+    color-scheme: light dark;
+}
