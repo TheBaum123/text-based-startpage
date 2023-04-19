@@ -1,4 +1,4 @@
-let scriptsToInject = []
+let scriptsToInject = ["changeSearchEngine"]
 let stylesToInject = []
 
 for(let i = 0; i < scriptsToInject.length; i++) {
