@@ -7,6 +7,16 @@
     font-family: 'Roboto Mono', monospace;
 }
 
+@media (prefers-color-scheme: light) {
+    :root {
+        --background-color: #fef5;
+        --purple-background-color: #feff;
+        --text-color: #323f;
+        --search-text-color: #535f53;
+        --purple-highlighter: #649f;
+    }
+}
+
 body {
     overflow: hidden;
     background-color: var(--background-color);
@@ -34,14 +44,4 @@ ion-icon[name="settings-outline"] {
 ion-icon[name="settings-outline"]:hover {
     background-color: var(--purple-highlighter);
     transform: scale(1.25);
-}
-
-@media (prefers-color-scheme: light) {
-    :root {
-        --background-color: #fef5;
-        --purple-background-color: #feff;
-        --text-color: #323f;
-        --search-text-color: #535f53;
-        --purple-highlighter: #649f;
-    }
 }
