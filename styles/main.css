@@ -10,9 +10,20 @@
 body {
     overflow: hidden;
     background-color: var(--background-color);
+    color-scheme: light dark;
 }
 
 .greetings-span {
     color: var(--text-color);
     font-size: 2rem;
+}
+
+@media (prefers-color-scheme: light) {
+    :root {
+        --background-color: #fef5;
+        --purple-background-color: #feff;
+        --text-color: #323f;
+        --search-text-color: #535f53;
+        --purple-highlighter: #649f;
+    }
 }
