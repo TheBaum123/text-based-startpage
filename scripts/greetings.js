@@ -15,7 +15,7 @@ setTimeout(() => {
 }, 10);
 
 setTimeout(() => {
-    if(greetingsShown == "true" || enableClock == "true") {
+    if(greetingsShown == true || enableClock == "true") {
         document.getElementById("greetings-container").style.top = "2.5vh"
     }
 }, 20);
