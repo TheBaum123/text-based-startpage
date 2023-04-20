@@ -1,0 +1,39 @@
+#clock-settings-container {
+    display: flex;
+    height: 10vh;
+    width: 98vw;
+    border: var(--purple-highlighter) 5px solid;
+    border-radius: 10px;
+    margin-top: 3%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: var(--text-color);
+    font-size: clamp(1rem, 1.5rem, 2rem);
+    gap: 5%;
+    background-color: var(--purple-background-color);
+}
+
+#clock-settings-container input {
+    height: 80%;
+    background-color: var(--purple-background-color);
+    border: var(--purple-highlighter) 5px solid;
+    border-radius: 10px;
+    text-align: center;
+}
+
+#clock-settings-container input::placeholder {
+    color: var(--text-color);
+    font-size: clamp(1rem, 1.5rem, 2rem);
+}
+
+#clock-settings-container input[type="checkbox"] {
+    aspect-ratio: 1/1;
+}
+
+#enable-clock-container {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    gap: 1%;
+}
