@@ -1,6 +1,7 @@
 {
     "Dev": {
         "DevDocs": "https://devdocs.io/",
+        "GitHub": "https://www.github.com",
         "mdn": "https://developer.mozilla.org",
         "w3schools": "https://www.w3schools.com"
     },
@@ -12,13 +13,17 @@
     "Reddit": {
         "r/homelab": "https://www.reddit.com/r/homelab/",
         "r/startpages": "https://www.reddit.com/r/startpages/",
-        "r/unixporn": "https://www.reddit.com/r/unixporn/"
+        "r/unixporn": "https://www.reddit.com/r/unixporn/",
+        "r/cableporn": "https://www.reddit.com/r/cableporn/"
     },
     "Socials": {
         "Discord": "https://discord.com/app/",
+        "FaceBook": "https://www.facebook.com",
+        "Instagram": "https://www.instagram.com",
         "LinkedIn": "https://www.linkedin.com/",
         "Mastodon": "https://mastodon.social/explore",
         "Reddit": "https://www.reddit.com/",
+        "TikTok": "https://www.tiktok.com",
         "Twitter": "https://twitter.com/home"
     },
     "Typing": {
