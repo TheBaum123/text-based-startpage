@@ -1,5 +1,5 @@
-let scriptsToInject = ["changeSearchEngine", "greetingSettings", "clockSettings", "enableQuote"]
-let stylesToInject = ["main", "selectSearchEngine", "greeting", "clock", "quote"]
+let scriptsToInject = ["changeSearchEngine", "greetingSettings", "clockSettings", "enableQuote", "changeTheme"]
+let stylesToInject = ["main", "selectSearchEngine", "greeting", "clock", "quote", "theme"]
 
 for(let i = 0; i < scriptsToInject.length; i++) {
     let scriptToInject = document.createElement("script")
