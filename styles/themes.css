@@ -5,3 +5,11 @@
     --light-text-color: #E2CFEA;
     --highlighter: #6247AA;
 }
+
+.gruvbox-light {
+    --background-color: #f9f5d7;
+    --light-background-color: #f2e5bc;
+    --text-color: #282828;
+    --light-text-color: #504945;
+    --highlighter: #9d0006;
+}
