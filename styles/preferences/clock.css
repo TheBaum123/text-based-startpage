@@ -2,7 +2,7 @@
     display: flex;
     height: 10vh;
     width: 98vw;
-    border: var(--purple-highlighter) 5px solid;
+    border: var(--highlight-color) 5px solid;
     border-radius: 10px;
     margin-top: 3%;
     flex-direction: column;
@@ -11,13 +11,13 @@
     color: var(--text-color);
     font-size: clamp(1rem, 1.5rem, 2rem);
     gap: 5%;
-    background-color: var(--purple-background-color);
+    background-color: var(--light-background-color);
 }
 
 #clock-settings-container input {
     height: 80%;
-    background-color: var(--purple-background-color);
-    border: var(--purple-highlighter) 5px solid;
+    background-color: var(--light-background-color);
+    border: var(--highlight-color) 5px solid;
     border-radius: 10px;
     text-align: center;
     outline: none;

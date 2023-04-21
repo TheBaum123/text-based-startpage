@@ -6,9 +6,9 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    border: var(--purple-highlighter) 5px solid;
+    border: var(--highlight-color) 5px solid;
     border-radius: 10px;
-    background-color: var(--purple-background-color);
+    background-color: var(--light-background-color);
     gap: 5%;
     font-size: clamp(1rem, 1.5rem, 2rem);
     color: var(--text-color);
@@ -16,8 +16,8 @@
 
 #greeting-settings-container input {
     height: 80%;
-    background-color: var(--purple-background-color);
-    border: var(--purple-highlighter) 5px solid;
+    background-color: var(--light-background-color);
+    border: var(--highlight-color) 5px solid;
     border-radius: 10px;
     text-align: center;
     color: var(--text-color);
