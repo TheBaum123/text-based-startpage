@@ -2,6 +2,12 @@ const dropdown = document.getElementById("theme-selector")
 const customSelectorsWrapper = document.getElementById("custom-color-selector")
 const selectionWrapperChildren = customSelectorsWrapper.children
 
+let customBackgroundColor = localStorage.getItem("text-startpage:custom-background-color")
+let customLightBackgroundColor = localStorage.getItem("text-startpage:custom-light-background-color")
+let customTextColor = localStorage.getItem("text-startpage:custom-text-color")
+let customLightTextColor = localStorage.getItem("text-startpage:custom-light-text-color")
+let customHighlighterColor = localStorage.getItem("text-startpage:custom-highlighter")
+
 dropdown.value = localStorage.getItem("text-startpage:theme")
 
 if(dropdown.value == "custom") {
@@ -21,6 +27,7 @@ dropdown.addEventListener("change", () => {
 
 setTimeout(() => {
     Object.values(selectionWrapperChildren).forEach(e => {
+        e.value = localStorage.getItem("text-startpage:custom-" + e.id)
         if(e.tagName == "INPUT") {
             e.addEventListener("change", () => {
                 localStorage.setItem("text-startpage:custom-" + e.id, e.value)
