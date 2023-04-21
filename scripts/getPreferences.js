@@ -5,6 +5,13 @@ localStorage.getItem("text-startpage:selectedSearchEngine") ? selectedSearchEngi
 //theme
 document.querySelector(":root").classList.add(localStorage.getItem("text-startpage:theme"))
 
+//cusotom theme colors
+let customBackgroundColor = localStorage.getItem("text-startpage:custom-background-color")
+let customLightBackgroundColor = localStorage.getItem("text-startpage:custom-light-background-color")
+let customTextColor = localStorage.getItem("text-startpage:custom-text-color")
+let customLightTextColor = localStorage.getItem("text-startpage:custom-light-text-color")
+let customHighlighterColor = localStorage.getItem("text-startpage:custom-highlighter")
+
 //greeting
 let enableGreeting = "" 
 localStorage.getItem("text-startpage:enableGreeting") ? enableGreeting = localStorage.getItem("text-startpage:enableGreeting") : enableGreeting = false
@@ -38,3 +45,19 @@ if(!bookmarks) {
         }
     }
 }
+
+setTimeout(() => {
+    if(localStorage.getItem("text-startpage:theme") == "custom") {
+        const colorsToInject = document.createElement("style")
+        colorsToInject.innerText = `
+            .custom {
+                --background-color: ${customBackgroundColor};
+                --light-background-color: ${customLightBackgroundColor};
+                --text-color: ${customTextColor};
+                --light-text-color: ${customLightTextColor};
+                --highlighter: ${customHighlighterColor};
+            }
+        `
+        document.head.appendChild(colorsToInject)
+    }
+}, 10);
