@@ -5,7 +5,7 @@
     width: 50vw;
     height: 15vh;
     text-align: center;
-    background-color: var(--purple-background-color);
+    background-color: var(--light-background-color);
     border-radius: 3vh;
     display: flex;
     justify-content: center;

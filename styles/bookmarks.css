@@ -1,7 +1,7 @@
 #bookmarks-container {
     height: 50%;
     width: 50%;
-    background-color: var(--purple-background-color);
+    background-color: var(--light-background-color);
     position: absolute;
     top: 40%;
     left: 50%;
@@ -34,7 +34,7 @@
     position: relative;
     height: 5px;
     width: 0%;
-    background-color: var(--purple-highlighter);
+    background-color: var(--highlighter);
     border-radius: 50vh;
     left: 50%;
     transition: 500ms;
