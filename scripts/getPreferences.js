@@ -2,6 +2,9 @@
 let selectedSearchEngine = ""
 localStorage.getItem("text-startpage:selectedSearchEngine") ? selectedSearchEngine = localStorage.getItem("text-startpage:selectedSearchEngine") : selectedSearchEngine = "duckduckgo"
 
+//theme
+document.querySelector(":root").classList.add(localStorage.getItem("text-startpage:theme"))
+
 //greeting
 let enableGreeting = "" 
 localStorage.getItem("text-startpage:enableGreeting") ? enableGreeting = localStorage.getItem("text-startpage:enableGreeting") : enableGreeting = false
