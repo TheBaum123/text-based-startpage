@@ -29,6 +29,12 @@
     background-color: var(--light-background-color);
     color: var(--light-text-color);
     font-size: 2rem;
+    cursor: pointer;
+    transition: 500ms;
+}
+
+#search-button:hover {
+    border-color: var(--highlighter);
 }
 
 #search-container {
