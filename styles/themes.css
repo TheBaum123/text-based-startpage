@@ -13,3 +13,27 @@
     --light-text-color: #504945;
     --highlighter: #9d0006;
 }
+
+.tokyonight {
+    --background-color: #0a0047;
+    --light-background-color: #004687;
+    --text-color: #9ece6a;
+    --light-text-color: #2ac3de;
+    --highlighter: #f7768e;
+}
+
+.dracula {
+    --background-color: #282a36;
+    --light-background-color: #44475a;
+    --text-color: #f8f8f2;
+    --light-text-color: #6272a4;
+    --highlighter: #ff5555;
+}
+
+.high-contrast {
+    --background-color: black;
+    --light-background-color: #222;
+    --text-color: white;
+    --light-text-color: white;
+    --highlighter: red;
+}
