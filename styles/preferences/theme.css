@@ -1,6 +1,6 @@
 #change-theme-container {
-    height: 10vh;
-    width: 98vw;
+    height: fit-content;
+    padding: 5%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -9,9 +9,19 @@
     border: var(--highlight-color) 5px solid;
     border-radius: 10px;
     gap: 1%;
+    flex-direction: column;
 }
 
 #change-theme-container * {
     font-size: clamp(1rem, 1.5rem, 2rem);
     color: var(--text-color);
+}
+
+#theme-selector-wrapper {
+    margin-bottom: 2%;
+}
+
+#custom-color-selector {
+    display: none;
+    flex-direction: column;
 }
