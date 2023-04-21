@@ -19,10 +19,12 @@ dropdown.addEventListener("change", () => {
     localStorage.setItem("text-startpage:theme", dropdown.value)
 })
 
-Object.values(selectionWrapperChildren).forEach(e => {
-    if(e.tagName == "INPUT") {
-        e.addEventListener("change", () => {
-            localStorage.setItem("text-startpage:custom-" + e.id, e.value)
-        })
-    }
-})
+setTimeout(() => {
+    Object.values(selectionWrapperChildren).forEach(e => {
+        if(e.tagName == "INPUT") {
+            e.addEventListener("change", () => {
+                localStorage.setItem("text-startpage:custom-" + e.id, e.value)
+            })
+        }
+    })
+}, 10); 
