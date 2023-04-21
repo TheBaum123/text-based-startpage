@@ -28,7 +28,7 @@ ion-icon[name="settings-outline"] {
     border: var(--light-text-color) 3px solid;
     border-radius: 50vh;
     padding: 1%;
-    transition: 250ms;
+    transition: 500ms;
 }
 
 ion-icon[name="settings-outline"]:hover {
@@ -36,7 +36,7 @@ ion-icon[name="settings-outline"]:hover {
     border-color: var(--highlighter);
     transform: scale(1.25);
     cursor: pointer;
-    animation: spin 1.5s ease 250ms;
+    animation: spin 1.5s ease 500ms;
 }
 
 @keyframes spin {
