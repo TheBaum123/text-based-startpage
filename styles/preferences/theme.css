@@ -17,6 +17,12 @@
     color: var(--text-color);
 }
 
+#change-theme-container select {
+    border: var(--highlight-color) 5px solid;
+    border-radius: 10px;
+    
+}
+
 #theme-selector-wrapper {
     margin-bottom: 2%;
 }
