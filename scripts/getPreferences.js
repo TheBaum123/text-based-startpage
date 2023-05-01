@@ -13,7 +13,7 @@ let customLightTextColor = localStorage.getItem("text-startpage:custom-light-tex
 let customHighlighterColor = localStorage.getItem("text-startpage:custom-highlighter")
 
 //custom page title
-let enableCustomTitle = localStorage.getItem("text-startpage:enableCustomTitle")
+let enableCustomTitle = JSON.parse(localStorage.getItem("text-startpage:enableCustomTitle"))
 let customTitle = localStorage.getItem("text-startpage:customTitle")
 
 //greeting
@@ -63,4 +63,14 @@ if(localStorage.getItem("text-startpage:theme") == "custom") {
         }
     `
     document.head.appendChild(colorsToInject)
+}
+
+//set custom page title
+if(enableCustomTitle) {
+    if(customTitle) {
+        document.title = customTitle
+        console.log(customTitle)
+    } else {
+        document.title = "​"
+    }
 }
