@@ -1,8 +1,33 @@
 #custom-page-title-wrapper {
-    height: 10vh;
     display: flex;
-    width: 90vw;
+    height: 15vh;
+    margin-top: 3%;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
+    gap: 5%;
+    background-color: var(--light-background-color);
+    border: var(--highlight-color) 5px solid;
+    border-radius: 10px;
+    font-size: clamp(1rem, 1.5rem, 2rem);
+    color: var(--text-color);
+}
+
+#enable-custom-title-wrapper {
+    display: flex;
+    gap: 1%;
+    width: 100%;
+    justify-content: center;
+}
+
+#enable-custom-title {
+    aspect-ratio: 1/1;
+}
+
+#custom-title {
+    text-align: center;
+    height: 100%;
+    font-size: 100%;
+    border: var(--highlight-color) 5px solid;
+    border-radius: 10px;
 }
