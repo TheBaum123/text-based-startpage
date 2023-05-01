@@ -13,6 +13,8 @@ let customLightTextColor = localStorage.getItem("text-startpage:custom-light-tex
 let customHighlighterColor = localStorage.getItem("text-startpage:custom-highlighter")
 
 //custom page title
+let enableCustomTitle = localStorage.getItem("text-startpage:enableCustomTitle")
+let customTitle = localStorage.getItem("text-startpage:customTitle")
 
 //greeting
 let enableGreeting = "" 
@@ -48,18 +50,17 @@ if(!bookmarks) {
     }
 }
 
-setTimeout(() => {
-    if(localStorage.getItem("text-startpage:theme") == "custom") {
-        const colorsToInject = document.createElement("style")
-        colorsToInject.innerText = `
-            .custom {
-                --background-color: ${customBackgroundColor};
-                --light-background-color: ${customLightBackgroundColor};
-                --text-color: ${customTextColor};
-                --light-text-color: ${customLightTextColor};
-                --highlighter: ${customHighlighterColor};
-            }
-        `
-        document.head.appendChild(colorsToInject)
-    }
-}, 10);
+//set the theme
+if(localStorage.getItem("text-startpage:theme") == "custom") {
+    const colorsToInject = document.createElement("style")
+    colorsToInject.innerText = `
+        .custom {
+            --background-color: ${customBackgroundColor};
+            --light-background-color: ${customLightBackgroundColor};
+            --text-color: ${customTextColor};
+            --light-text-color: ${customLightTextColor};
+            --highlighter: ${customHighlighterColor};
+        }
+    `
+    document.head.appendChild(colorsToInject)
+}
