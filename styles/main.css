@@ -28,22 +28,12 @@ ion-icon[name="settings-outline"] {
     border: var(--light-text-color) 3px solid;
     border-radius: 50vh;
     padding: 1%;
-    transition: 500ms;
+    transition: 750ms;
 }
 
 ion-icon[name="settings-outline"]:hover {
     background-color: var(--light-background-color);
     border-color: var(--highlighter);
-    transform: scale(1.25);
     cursor: pointer;
-    animation: spin 1.5s ease 500ms;
-}
-
-@keyframes spin {
-    from {
-        transform: scale(1.25) rotate(0);
-    }
-    to {
-        transform: scale(1.25) rotate(720deg);
-    }
+    transform: scale(1.25) rotate(360deg);
 }
