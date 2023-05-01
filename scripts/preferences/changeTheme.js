@@ -8,7 +8,9 @@ let customTextColor = localStorage.getItem("text-startpage:custom-text-color")
 let customLightTextColor = localStorage.getItem("text-startpage:custom-light-text-color")
 let customHighlighterColor = localStorage.getItem("text-startpage:custom-highlighter")
 
-dropdown.value = localStorage.getItem("text-startpage:theme")
+if(localStorage.getItem("text-startpage:theme")) {
+    dropdown.value = localStorage.getItem("text-startpage:theme")
+}
 
 if(dropdown.value == "custom") {
     customSelectorsWrapper.style.display = "flex"
