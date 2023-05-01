@@ -5,12 +5,14 @@ localStorage.getItem("text-startpage:selectedSearchEngine") ? selectedSearchEngi
 //theme
 document.querySelector(":root").classList.add(localStorage.getItem("text-startpage:theme"))
 
-//cusotom theme colors
+//custom theme colors
 let customBackgroundColor = localStorage.getItem("text-startpage:custom-background-color")
 let customLightBackgroundColor = localStorage.getItem("text-startpage:custom-light-background-color")
 let customTextColor = localStorage.getItem("text-startpage:custom-text-color")
 let customLightTextColor = localStorage.getItem("text-startpage:custom-light-text-color")
 let customHighlighterColor = localStorage.getItem("text-startpage:custom-highlighter")
+
+//custom page title
 
 //greeting
 let enableGreeting = "" 
