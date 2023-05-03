@@ -25,9 +25,9 @@ function search() {
     userSearchInput = encodeURIComponent(document.getElementById("search-input").value)
     if(Object.keys(availableDirectLinks).includes(decodeURIComponent(userSearchInput))) {
         window.location.assign(availableDirectLinks[userSearchInput])
-    } else if(validateIP.test(userSearchInput) || validIPWithPort.test(userSearchInput)) {
+    } else if(validateIP.test(userSearchInput) || validIPWithPort.test(decodeURIComponent(userSearchInput))) {
         window.location.assign("http://" + userSearchInput)
-    } else if(validateURL.test(userSearchInput)) {
+    } else if(validateURL.test(decodeURIComponent(userSearchInput))) {
         window.location.assign(userSearchInput)
     } else if(validateReddit.test(decodeURIComponent(userSearchInput))) {
         window.location.assign(`https://reddit.com/${userSearchInput}`)
@@ -47,8 +47,7 @@ function checkSearch() {
         } else if(Object.keys(availableSearchSites).includes(splitUserInput[0])) {
             return(availableSearchSites[splitUserInput[0]] + splitUserInput[1])
         } 
-    }
-    else {
+    } else {
             return(false)
         }
 }
