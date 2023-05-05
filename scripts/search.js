@@ -23,19 +23,12 @@ searchInputField.addEventListener("change", () => {
 function search() {
     if(!userSearchInput) return
     userSearchInput = encodeURIComponent(document.getElementById("search-input").value)
-    if(Object.keys(availableDirectLinks).includes(decodeURIComponent(userSearchInput))) {
-        window.location.assign(availableDirectLinks[userSearchInput])
-    } else if(validateIP.test(userSearchInput) || validIPWithPort.test(decodeURIComponent(userSearchInput))) {
-        window.location.assign("http://" + userSearchInput)
-    } else if(validateURL.test(decodeURIComponent(userSearchInput))) {
-        window.location.assign(userSearchInput)
-    } else if(validateReddit.test(decodeURIComponent(userSearchInput))) {
-        window.location.assign(`https://reddit.com/${userSearchInput}`)
-    } else if(checkSearch() != false) {
-        window.location.assign(checkSearch())
-    } else {
-        window.location.assign(availableSearchEngines[selectedSearchEngine] + userSearchInput)
-    }
+    if(Object.keys(availableDirectLinks).includes(decodeURIComponent(userSearchInput))) window.location.assign(availableDirectLinks[userSearchInput])
+    else if(validateIP.test(userSearchInput) || validIPWithPort.test(decodeURIComponent(userSearchInput))) window.location.assign("http://" + userSearchInput)
+    else if(validateURL.test(decodeURIComponent(userSearchInput))) window.location.assign(decodeURIComponent(userSearchInput))
+    else if(validateReddit.test(decodeURIComponent(userSearchInput))) window.location.assign(`https://reddit.com/${userSearchInput}`)
+    else if(checkSearch() != false) window.location.assign(checkSearch())
+    else window.location.assign(availableSearchEngines[selectedSearchEngine] + userSearchInput)
 }
 
 function checkSearch() {
