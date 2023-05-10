@@ -7,7 +7,8 @@ let enableGreeting = localStorage.getItem("text-startpage:enableGreeting")
 let greetingText = localStorage.getItem("text-startpage:greetingText")
 let greetingName = localStorage.getItem("text-startpage:greetingName")
 
-enableGreetingCheckbox.checked = enableGreeting ? enableGreeting == "true" : enableGreeting != "true"
+if(!enableGreeting) enableGreeting = false
+enableGreetingCheckbox.checked = JSON.parse(enableGreeting)
 greetingTextInput.value = greetingText
 greetingNameInput.value = greetingName
 
