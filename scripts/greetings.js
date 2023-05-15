@@ -1,7 +1,7 @@
 let greetingsShown = false
 setTimeout(() => {
     if(enableGreeting == "true" && greetingText && greetingName) {
-        $("#greetings-container>:nth-child(1)>span").html(`${greetingText}, ${greetingName}.`)
+        document.getElementById("greetings-text").innerText = `${greetingText}, ${greetingName}.`
         greetingsShown = true
     } else {
         greetingsShown = false

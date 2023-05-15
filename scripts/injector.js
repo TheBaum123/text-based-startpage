@@ -1,4 +1,4 @@
-let scriptsToInject = ["jquery", "clock", "getPreferences", "getjson", "search", "bookmarks", "greetings", "randomQuote"]
+let scriptsToInject = ["clock", "getPreferences", "getjson", "search", "bookmarks", "greetings", "randomQuote"]
 let stylesToInject = ["main", "greetings", "searchBar", "bookmarks", "themes"]
 
 for(let i = 0; i < scriptsToInject.length; i++) {

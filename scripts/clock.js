@@ -23,8 +23,8 @@ function updateTime() {
     ]
     let outputTime = `${twoDigit(time.getHours())} ${clockSeperator} ${twoDigit(time.getMinutes())} ${clockSeperator} ${twoDigit(time.getSeconds())}`
     let outputDate = `${twoDigit(time.getDate())} ${clockSeperator} ${monthNames[time.getMonth()]} ${clockSeperator} ${time.getFullYear()}`
-    $("#greetings-container>:nth-child(2)>:first-child").html(outputTime)
-    $("#greetings-container>:nth-child(2)>:last-child").html(outputDate)
+    document.getElementById("time-display").innerText = outputTime
+    document.getElementById("date-display").innerText = outputDate
 }
 
 //function to prefix single digit numbers with 0 for consistancy
