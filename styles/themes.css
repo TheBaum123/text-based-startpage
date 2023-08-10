@@ -37,3 +37,11 @@
     --light-text-color: white;
     --highlighter: red;
 }
+
+.rose-pine-moon {
+    --background-color: #232136;
+    --light-background-color: #2a273f;
+    --text-color: #e0def4;
+    --light-text-color: #908caa;
+    --highlighter: #56526e;
+}
