@@ -11,10 +11,10 @@
         "YouTube": "https://www.youtube.com"
     },
     "Reddit": {
+        "r/cableporn": "https://www.reddit.com/r/cableporn/",
         "r/homelab": "https://www.reddit.com/r/homelab/",
         "r/startpages": "https://www.reddit.com/r/startpages/",
-        "r/unixporn": "https://www.reddit.com/r/unixporn/",
-        "r/cableporn": "https://www.reddit.com/r/cableporn/"
+        "r/unixporn": "https://www.reddit.com/r/unixporn/"
     },
     "Socials": {
         "Discord": "https://discord.com/app/",
