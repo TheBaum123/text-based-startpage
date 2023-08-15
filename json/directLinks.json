@@ -1,9 +1,11 @@
 {
     "amazon": "https://www.amazon.com",
     "az": "https://www.amazon.com",
+    "bazaar-flip": "https://thebaum123.github.io/hypixel-npc-bazaar-flipping-calculator",
     "bing": "https://www.bing.com",
     "chatgpt": "https://chat.openai.com",
     "dc": "https://www.discord.com/app",
+    "desmos": "https://www.desmos.com/calculator",
     "dip-switch": "https://thebaum123.github.io/dip-switch-calculator",
     "dip-switch-calc": "https://thebaum123.github.io/dip-switch-calculator",
     "dip-switch-calculator": "https://thebaum123.github.io/dip-switch-calculator",
@@ -11,12 +13,12 @@
     "edclub": "https://www.typingclub.com",
     "facebook": "https://www.facebook.com",
     "fb": "https://www.facebook.com",
+    "gfonts": "https://fonts.google.com",
     "gh": "https://www.github.com",
     "github": "https://www.github.com",
     "gmail": "https://mail.google.com/mail",
     "google": "https://www.google.com",
     "google fonts": "https://fonts.google.com",
-    "gfonts": "https://fonts.google.com",
     "google mail": "https://mail.google.com/mail",
     "gpt": "https://chat.openai.com",
     "insta": "https://www.instagram.com",
@@ -55,6 +57,5 @@
     "yandex": "https://yandex.com",
     "youtube": "https://www.youtube.com",
     "yt": "https://www.youtube.com",
-    "ztype": "https://zty.pe",
-    "desmos": "https://www.desmos.com/calculator"
+    "ztype": "https://zty.pe"
 }
