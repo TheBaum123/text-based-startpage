@@ -1,4 +1,4 @@
-if (wallpapersLinksArray) {
+if (wallpapersLinksArray && enableCustomWallpapers != 0) {
     if (
         wallpapersLinksArray.length - 1 < wallpapersCycleIndex ||
         wallpapersCycleIndex == null

@@ -1,4 +1,4 @@
-#change-theme-container {
+#custom-wallpapers-wrapper {
     height: fit-content;
     padding: 5%;
     display: flex;
@@ -10,24 +10,6 @@
     border-radius: 10px;
     gap: 1%;
     flex-direction: column;
-}
-
-#change-theme-container * {
     font-size: clamp(1rem, 1.5rem, 2rem);
     color: var(--text-color);
-}
-
-#change-theme-container select {
-    border: var(--highlight-color) 5px solid;
-    border-radius: 10px;
-
-}
-
-#theme-selector-wrapper {
-    margin-bottom: 2%;
-}
-
-#custom-color-selector {
-    display: none;
-    flex-direction: column;
 }

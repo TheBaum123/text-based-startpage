@@ -55,6 +55,9 @@ let wallpapersLinksArray =
     JSON.parse(localStorage.getItem("text-startpage:wallpapers")) || 0;
 let wallpapersCycleIndex =
     JSON.parse(localStorage.getItem("text-startpage:wallpaperCycleIndex")) || 0;
+let enableCustomWallpapers =
+    JSON.parse(localStorage.getItem("text-startpage:enableCustomWallpapers")) ||
+    0;
 
 //bookmarks
 let bookmarks = JSON.parse(localStorage.getItem("text-startpage:bookmarks"));

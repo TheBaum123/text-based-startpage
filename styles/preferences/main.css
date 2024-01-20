@@ -1,9 +1,9 @@
 :root {
-    --background-color: #062726;
-    --light-background-color: #102B3F;
-    --text-color: #E0E2DB;
-    --light-text-color: #E2CFEA;
-    --highlight-color: #6247AA;
+    --background-color: #1d2021;
+    --light-background-color: #32302f;
+    --text-color: #fbf1c7;
+    --light-text-color: #d5c4a1;
+    --highlight-color: #fb4934;
     font-family: 'Roboto Mono', monospace;
 }
 

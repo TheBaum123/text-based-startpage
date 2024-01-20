@@ -1,0 +1,47 @@
+.the-baum {
+    --background-color: #062726;
+    --light-background-color: #102B3F;
+    --text-color: #E0E2DB;
+    --light-text-color: #E2CFEA;
+    --highlight-color: #6247AA;
+}
+
+.gruvbox-light {
+    --background-color: #f9f5d7;
+    --light-background-color: #f2e5bc;
+    --text-color: #282828;
+    --light-text-color: #504945;
+    --highlight-color: #9d0006;
+}
+
+.tokyonight {
+    --background-color: #0a0047;
+    --light-background-color: #004687;
+    --text-color: #9ece6a;
+    --light-text-color: #2ac3de;
+    --highlight-color: #f7768e;
+}
+
+.dracula {
+    --background-color: #282a36;
+    --light-background-color: #44475a;
+    --text-color: #f8f8f2;
+    --light-text-color: #6272a4;
+    --highlight-color: #ff5555;
+}
+
+.high-contrast {
+    --background-color: black;
+    --light-background-color: #222;
+    --text-color: white;
+    --light-text-color: white;
+    --highlight-color: red;
+}
+
+.rose-pine-moon {
+    --background-color: #232136;
+    --light-background-color: #2a273f;
+    --text-color: #e0def4;
+    --light-text-color: #908caa;
+    --highlight-color: #56526e;
+}

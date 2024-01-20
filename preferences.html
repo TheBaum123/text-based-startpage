@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en" style="background-color: #062726;">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>startpage preferences</title>
 </head>
+
 <body>
     <script src="scripts/preferences/main.js"></script>
     <div id="search-engine-select-container">
@@ -82,6 +84,17 @@
             <input type="text" id="custom-title" placeholder="default: startpage">
         </div>
     </div>
+    <div id="custom-wallpapers-wrapper">
+        <div>
+            <input type="checkbox" name="enable-custom-wallpapers-check" id="enable-custom-wallpapers-check">
+            <label for="enable-custom-wallpapers-check">Enable custom wallpapers (extremely experimental)</label>
+        </div>
+        <div>
+            <label for="custom-wallpapers-array-input">Array of custom wallpapers:</label>
+            <textarea cols="30" rows="1" placeholder="[&#34;image1.url&#34;, &#34;image2.url&#34;]"
+                name="custom-wallpapers-array-input" id="custom-wallpapers-array-input"></textarea>
+        </div>
+    </div>
     <!--
         TODO: bookmark editor:
             - default bookmarks (clear and reload)
@@ -98,4 +111,5 @@
                 - change sorting
     -->
 </body>
+
 </html>
