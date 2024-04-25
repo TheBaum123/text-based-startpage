@@ -28,6 +28,7 @@
     "mdn": "https://developer.mozilla.org",
     "monkeytype": "https://monkeytype.com",
     "netflix": "https://www.netflix.com/browse",
+    "nf": "https://www.netflix.com/browse",
     "onedrive": "https://www.microsoft.com/microsoft-365/onedrive",
     "reddit": "https://www.reddit.com",
     "server name": "https://thebaum123.github.io/server-name-generator",
@@ -57,5 +58,7 @@
     "yandex": "https://yandex.com",
     "youtube": "https://www.youtube.com",
     "yt": "https://www.youtube.com",
-    "ztype": "https://zty.pe"
+    "ztype": "https://zty.pe",
+    "dp": "https://www.disneyplus.com/",
+    "disney plus": "https://www.disneyplus.com/"
 }
