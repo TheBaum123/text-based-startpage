@@ -45,3 +45,19 @@
     --light-text-color: #908caa;
     --highlight-color: #56526e;
 }
+
+.everforest-dark {
+    --background-color: #232A2E;
+    --light-background-color: #343F44;
+    --text-color: #D3C6AA;
+    --light-text-color: #D3C6AA;
+    --highlight-color: #E67E80;
+}
+
+.everforest-light {
+    --background-color: #EFEBD4;
+    --light-background-color: #FDF6E3;
+    --text-color: #5C6A72;
+    --light-text-color: #5C6A72;
+    --highlight-color: #F85552;
+}

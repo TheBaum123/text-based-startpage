@@ -3,7 +3,7 @@
     --light-background-color: #102B3F;
     --text-color: #E0E2DB;
     --light-text-color: #E2CFEA;
-    --highlighter: #6247AA;
+    --highlight-color: #6247AA;
 }
 
 .gruvbox-light {
@@ -11,7 +11,7 @@
     --light-background-color: #f2e5bc;
     --text-color: #282828;
     --light-text-color: #504945;
-    --highlighter: #9d0006;
+    --highlight-color: #9d0006;
 }
 
 .tokyonight {
@@ -19,7 +19,7 @@
     --light-background-color: #004687;
     --text-color: #9ece6a;
     --light-text-color: #2ac3de;
-    --highlighter: #f7768e;
+    --highlight-color: #f7768e;
 }
 
 .dracula {
@@ -27,7 +27,7 @@
     --light-background-color: #44475a;
     --text-color: #f8f8f2;
     --light-text-color: #6272a4;
-    --highlighter: #ff5555;
+    --highlight-color: #ff5555;
 }
 
 .high-contrast {
@@ -35,7 +35,7 @@
     --light-background-color: #222;
     --text-color: white;
     --light-text-color: white;
-    --highlighter: red;
+    --highlight-color: red;
 }
 
 .rose-pine-moon {
@@ -43,5 +43,21 @@
     --light-background-color: #2a273f;
     --text-color: #e0def4;
     --light-text-color: #908caa;
-    --highlighter: #56526e;
+    --highlight-color: #56526e;
+}
+
+.everforest-dark {
+    --background-color: #232A2E;
+    --light-background-color: #343F44;
+    --text-color: #D3C6AA;
+    --light-text-color: #D3C6AA;
+    --highlight-color: #E67E80;
+}
+
+.everforest-light {
+    --background-color: #EFEBD4;
+    --light-background-color: #FDF6E3;
+    --text-color: #5C6A72;
+    --light-text-color: #5C6A72;
+    --highlight-color: #F85552;
 }
