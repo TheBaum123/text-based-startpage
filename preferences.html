@@ -10,6 +10,7 @@
 
 <body>
     <script src="scripts/preferences/main.js"></script>
+
     <div id="search-engine-select-container" class="settings-container">
         <div class="setting-container">
             <label for="search-engine-select">Select your prefered Search Engine:</label>
@@ -18,43 +19,47 @@
             </select>
         </div>
     </div>
+
     <div id="greeting-settings-container" class="settings-container">
-        <div id="enable-greeting-container">
+        <div id="enable-greeting-container" class="setting-container">
             <input type="checkbox" id="enable-greeting">
             <label for="enable-greeting">Enable Greeting</label>
         </div>
-        <div id="greeting-text-container">
+        <div id="greeting-text-container" class="setting-container">
             <label for="greeting-text">Greeting Text: </label>
             <input id="greeting-text" type="text" placeholder="e.g. Hello or Good Day">
         </div>
-        <div id="greeting-name-container">
+        <div id="greeting-name-container" class="setting-container">
             <label for="greeting-name">Name to display in greeting: </label>
             <input id="greeting-name" type="text" placeholder="your name">
         </div>
         <span id="greeting-preview"></span>
     </div>
+
     <div id="clock-settings-container" class="settings-container">
-        <div id="enable-clock-container">
-            <input type="checkbox" id="enable-clock">
+        <div id="enable-clock-container" class="setting-container">
+            <input type="checkbox" id="enable-clock" class="check">
             <label for="enable-clock">Enable Clock</label>
         </div>
-        <div id="clock-seperator-container">
+        <div id="clock-seperator-container" class="setting-container">
             <label for="clock-seperator-input">Which time seperator should be used? </label>
             <input type="text" id="clock-seperator-input" placeholder="default: '|'">
         </div>
-        <div id="date-seperator-container">
+        <div id="date-seperator-container" class="setting-container">
             <label for="date-seperator-input">Which date seperator should be used?</label>
             <input type="text" id="date-seperator-input" placeholder="default: '|'">
         </div>
     </div>
+
     <div id="disable-quote-container" class="settings-container">
-        <div id="enable-quote-wrapper">
+        <div id="enable-quote-wrapper" class="setting-container">
             <input type="checkbox" id="enable-quote">
             <label for="enable-quote">Enable Quote</label>
         </div>
     </div>
+
     <div id="change-theme-container" class="settings-container">
-        <div id="theme-selector-wrapper">
+        <div id="theme-selector-wrapper" class="setting-container">
             <label for="theme-selector">Theme: </label>
             <select id="theme-selector">
                 <option value="default" selected>Gruvbox dark (default)</option>
@@ -70,34 +75,46 @@
             </select>
         </div>
         <div id="custom-color-selector">
-            <label for="background-color">Background color:</label>
-            <input type="color" id="background-color">
-            <label for="light-background-color">Containers background color:</label>
-            <input type="color" id="light-background-color">
-            <label for="text-color">Text color:</label>
-            <input type="color" id="text-color">
-            <label for="light-text-color">Search bar text color:</label>
-            <input type="color" id="light-text-color">
-            <label for="highlighter">Accent color:</label>
-            <input type="color" id="highlighter">
+            <div class="setting-container">
+                <label for="background-color">Background color:</label>
+                <input type="color" id="background-color">
+            </div>
+            <div class="setting-container">
+                <label for="light-background-color">Containers background color:</label>
+                <input type="color" id="light-background-color">
+            </div>
+            <div class="setting-container">
+                <label for="text-color">Text color:</label>
+                <input type="color" id="text-color">
+            </div>
+            <div class="setting-container">
+                <label for="light-text-color">Search bar text color:</label>
+                <input type="color" id="light-text-color">
+            </div>
+            <div class="setting-container">
+                <label for="highlighter">Accent color:</label>
+                <input type="color" id="highlighter">
+            </div>
         </div>
     </div>
+
     <div id="custom-page-title-wrapper" class="settings-container">
-        <div id="enable-custom-title-wrapper">
+        <div id="enable-custom-title-wrapper" class="setting-container">
             <input type="checkbox" id="enable-custom-title">
             <label for="enable-custom-title">Enable custom page title</label>
         </div>
-        <div id="custom-title-input-wrapper">
+        <div id="custom-title-input-wrapper" class="setting-container">
             <label for="custom-title">Custom Title: </label>
             <input type="text" id="custom-title" placeholder="default: startpage">
         </div>
     </div>
+
     <div id="custom-wallpapers-wrapper" class="settings-container">
-        <div>
+        <div class="setting-container">
             <input type="checkbox" name="enable-custom-wallpapers-check" id="enable-custom-wallpapers-check">
             <label for="enable-custom-wallpapers-check">Enable custom wallpapers (extremely experimental)</label>
         </div>
-        <div>
+        <div class="setting-container">
             <label for="custom-wallpapers-array-input">Array of custom wallpapers:</label>
             <textarea cols="30" rows="1" placeholder="[&#34;image1.url&#34;, &#34;image2.url&#34;]"
                 name="custom-wallpapers-array-input" id="custom-wallpapers-array-input"></textarea>
