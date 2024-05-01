@@ -55,6 +55,7 @@ input[type="text"],
 select {
     border: 2px var(--highlight-color) solid;
     height: 2rem;
+    font-size: 1rem;
 }
 
 button {
