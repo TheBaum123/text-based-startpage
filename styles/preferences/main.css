@@ -16,7 +16,7 @@ body {
 .settings-container {
     border: var(--highlight-color) 5px solid;
     color: var(--text-color);
-    font-size: clamp(2rem, 3rem, 4rem);
+    font-size: clamp(1.5rem, 2rem, 3rem);
     background-color: var(--light-background-color);
     border-radius: 1vh;
     margin-block: 1vh;
@@ -54,10 +54,7 @@ button {
 input[type="text"],
 select {
     border: 2px var(--highlight-color) solid;
-}
-
-input[type="text"] {
-    height: 1.2em;
+    height: 2rem;
 }
 
 button {
