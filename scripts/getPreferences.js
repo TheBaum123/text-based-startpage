@@ -44,8 +44,9 @@ localStorage.getItem("text-startpage:greetingText")
 let greetingName = localStorage.getItem("text-startpage:greetingName");
 
 //clock
-let clockSeperator = localStorage.getItem("text-startpage:clockSeperator");
 let enableClock = localStorage.getItem("text-startpage:enableClock");
+let clockSeperator = localStorage.getItem("text-startpage:clockSeperator");
+let dateSeperator = localStorage.getItem("text-startpage:dateSeperator");
 
 //quote
 let enableQuote = localStorage.getItem("text-startpage:enableQuote");
