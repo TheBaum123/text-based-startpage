@@ -7,17 +7,7 @@ let scriptsToInject = [
     "customTitle",
     "customWallpapers",
 ];
-let stylesToInject = [
-    "main",
-    "selectSearchEngine",
-    "greeting",
-    "clock",
-    "quote",
-    "theme",
-    "customTitle",
-    "themes",
-    "customWallpapers",
-];
+let stylesToInject = ["main", "themes"];
 
 for (let i = 0; i < scriptsToInject.length; i++) {
     let scriptToInject = document.createElement("script");
