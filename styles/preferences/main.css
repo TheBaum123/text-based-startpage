@@ -16,7 +16,7 @@ body {
 .settings-container {
     border: var(--highlight-color) 5px solid;
     color: var(--text-color);
-    font-size: clamp(1rem, 1.5rem, 2rem);
+    font-size: clamp(2rem, 3rem, 4rem);
     background-color: var(--light-background-color);
     border-radius: 1vh;
     margin-block: 1vh;
