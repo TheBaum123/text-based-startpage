@@ -1,6 +1,6 @@
 #clock-settings-container {
     display: flex;
-    height: 10vh;
+    height: 15vh;
     border: var(--highlight-color) 5px solid;
     border-radius: 10px;
     margin-top: 3%;
