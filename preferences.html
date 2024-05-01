@@ -10,13 +10,15 @@
 
 <body>
     <script src="scripts/preferences/main.js"></script>
-    <div id="search-engine-select-container" class="setting-container">
-        <label for="search-engine-select">Select your prefered Search Engine:</label>
-        <select id="search-engine-select">
-            <option selected="selected" disabled>-- select search engine --</option>
-        </select>
+    <div id="search-engine-select-container" class="settings-container">
+        <div class="setting-container">
+            <label for="search-engine-select">Select your prefered Search Engine:</label>
+            <select id="search-engine-select">
+                <option selected="selected" disabled>-- select search engine --</option>
+            </select>
+        </div>
     </div>
-    <div id="greeting-settings-container" class="setting-container">
+    <div id="greeting-settings-container" class="settings-container">
         <div id="enable-greeting-container">
             <input type="checkbox" id="enable-greeting">
             <label for="enable-greeting">Enable Greeting</label>
@@ -31,7 +33,7 @@
         </div>
         <span id="greeting-preview"></span>
     </div>
-    <div id="clock-settings-container" class="setting-container">
+    <div id="clock-settings-container" class="settings-container">
         <div id="enable-clock-container">
             <input type="checkbox" id="enable-clock">
             <label for="enable-clock">Enable Clock</label>
@@ -45,13 +47,13 @@
             <input type="text" id="date-seperator-input" placeholder="default: '|'">
         </div>
     </div>
-    <div id="disable-quote-container" class="setting-container">
+    <div id="disable-quote-container" class="settings-container">
         <div id="enable-quote-wrapper">
             <input type="checkbox" id="enable-quote">
             <label for="enable-quote">Enable Quote</label>
         </div>
     </div>
-    <div id="change-theme-container" class="setting-container">
+    <div id="change-theme-container" class="settings-container">
         <div id="theme-selector-wrapper">
             <label for="theme-selector">Theme: </label>
             <select id="theme-selector">
@@ -80,7 +82,7 @@
             <input type="color" id="highlighter">
         </div>
     </div>
-    <div id="custom-page-title-wrapper" class="setting-container">
+    <div id="custom-page-title-wrapper" class="settings-container">
         <div id="enable-custom-title-wrapper">
             <input type="checkbox" id="enable-custom-title">
             <label for="enable-custom-title">Enable custom page title</label>
@@ -90,7 +92,7 @@
             <input type="text" id="custom-title" placeholder="default: startpage">
         </div>
     </div>
-    <div id="custom-wallpapers-wrapper" class="setting-container">
+    <div id="custom-wallpapers-wrapper" class="settings-container">
         <div>
             <input type="checkbox" name="enable-custom-wallpapers-check" id="enable-custom-wallpapers-check">
             <label for="enable-custom-wallpapers-check">Enable custom wallpapers (extremely experimental)</label>

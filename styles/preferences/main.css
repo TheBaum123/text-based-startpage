@@ -12,3 +12,10 @@ body {
     background-color: var(--background-color);
     color-scheme: light dark;
 }
+
+.settings-container {
+    border: var(--highlight-color) 5px solid;
+    color: var(--text-color);
+    font-size: clamp(1rem, 1.5rem, 2rem);
+    background-color: var(--light-background-color);
+}
