@@ -46,8 +46,8 @@ select {
     color: var(--text-color);
     background-color: var(--background-color);
     text-align: center;
-    border-radius: 100vh;
-    border: 2px var(--text-color) solid;
+    border-radius: 5px;
+    border: 2px var(--highlight-color) solid;
 }
 
 input[type="text"] {
