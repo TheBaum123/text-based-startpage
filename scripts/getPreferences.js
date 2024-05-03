@@ -40,8 +40,10 @@ localStorage.getItem("text-startpage:enableGreeting")
 let greetingText = "";
 localStorage.getItem("text-startpage:greetingText")
     ? (greetingText = localStorage.getItem("text-startpage:greetingText"))
-    : (greetingText = "Hello");
-let greetingName = localStorage.getItem("text-startpage:greetingName");
+    : (greetingText = null);
+let greetingName = localStorage.getItem("text-startpage:greetingName")
+    ? localStorage.getItem("text-startpage:greetingName")
+    : null;
 
 //clock
 let enableClock = localStorage.getItem("text-startpage:enableClock");
