@@ -64,7 +64,7 @@ let enableCustomWallpapers =
 
 //bookmarks
 let bookmarks = JSON.parse(localStorage.getItem("text-startpage:bookmarks"));
-if (!bookmarks && !bookmarks == "") {
+if (!bookmarks) {
     const xhr = new XMLHttpRequest();
     xhr.open("GET", "json/defaultBookmarks.json");
     xhr.responseType = "json";
@@ -87,12 +87,13 @@ if (!bookmarks && !bookmarks == "") {
     };
 }
 
+/* TODO: unscrew the screwup / add disable bookmarks
 if (bookmarks == "") {
     document.body.removeChild(document.getElementById("bookmarks-container"));
     document.getElementById("search-container").style.top = "50vh";
     document.getElementById("search-container").style.transform =
         "translate(-50%, -50%)";
-}
+} */
 
 //set the theme
 if (localStorage.getItem("text-startpage:theme") == "custom") {
