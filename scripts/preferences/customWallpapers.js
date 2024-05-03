@@ -11,8 +11,10 @@ let enableCustomWallpaper = JSON.parse(
     localStorage.getItem("text-startpage:enableCustomWallpapers") || false
 );
 let customWallpapersArray = JSON.parse(
-    localStorage.getItem("text-startpage:wallpapers") || []
+    localStorage.getItem("text-startpage:wallpapers")
 );
+
+if (!customWallpapersArray) customWallpapersArray = [];
 
 enableCustomWallpapersCheck.checked = enableCustomWallpaper;
 
@@ -52,7 +54,7 @@ function addWallpaperToList(wallpaperLink, index) {
     newWallpaperTextNode.target = "_blank";
     removeWallpaperButtonNode.innerText = "X";
     removeWallpaperButtonNode.onclick = () => {
-        customWallpapersArray.splice(`${index}`, `${index}`);
+        customWallpapersArray.splice(`${index}`, 1);
         customWallpapersWrapper.removeChild(newWallpaperNode);
         localStorage.setItem(
             "text-startpage:wallpapers",
