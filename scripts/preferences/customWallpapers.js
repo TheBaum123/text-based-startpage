@@ -11,7 +11,7 @@ let enableCustomWallpaper = JSON.parse(
     localStorage.getItem("text-startpage:enableCustomWallpapers") || false
 );
 let customWallpapersArray = JSON.parse(
-    localStorage.getItem("text-startpage:wallpapers")
+    localStorage.getItem("text-startpage:wallpapers") || []
 );
 
 enableCustomWallpapersCheck.checked = enableCustomWallpaper;
