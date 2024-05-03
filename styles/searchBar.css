@@ -12,7 +12,7 @@
 }
 
 #search-input:focus {
-    border-color: var(--highlighter);
+    border-color: var(--highlight-color);
     filter: brightness(120%);
 }
 
@@ -34,7 +34,7 @@
 }
 
 #search-button:hover {
-    border-color: var(--highlighter);
+    border-color: var(--highlight-color);
 }
 
 #search-container {

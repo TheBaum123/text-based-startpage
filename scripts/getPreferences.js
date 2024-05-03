@@ -94,7 +94,7 @@ if (localStorage.getItem("text-startpage:theme") == "custom") {
             --light-background-color: ${customLightBackgroundColor};
             --text-color: ${customTextColor};
             --light-text-color: ${customLightTextColor};
-            --highlighter: ${customHighlighterColor};
+            --highlight-color: ${customHighlighterColor};
         }
     `;
     document.head.appendChild(colorsToInject);

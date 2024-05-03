@@ -34,7 +34,7 @@
     position: relative;
     height: 5px;
     width: 0%;
-    background-color: var(--highlighter);
+    background-color: var(--highlight-color);
     border-radius: 50vh;
     left: 50%;
     transition: 500ms;
