@@ -64,7 +64,7 @@ let enableCustomWallpapers =
 
 //bookmarks
 let bookmarks = JSON.parse(localStorage.getItem("text-startpage:bookmarks"));
-if (!bookmarks) {
+if (!bookmarks && !bookmarks == "") {
     const xhr = new XMLHttpRequest();
     xhr.open("GET", "json/defaultBookmarks.json");
     xhr.responseType = "json";
@@ -85,6 +85,13 @@ if (!bookmarks) {
                 .appendChild(errorSpan);
         }
     };
+}
+
+if (bookmarks == "") {
+    document.body.removeChild(document.getElementById("bookmarks-container"));
+    document.getElementById("search-container").style.top = "50vh";
+    document.getElementById("search-container").style.transform =
+        "translate(-50%, -50%)";
 }
 
 //set the theme
