@@ -98,13 +98,15 @@ if (enableBookmarks == false) {
     document.body.removeChild(document.getElementById("bookmarks-container"));
 }
 
-if (enableBookmarksLayoutShift == true) {
+if (enableBookmarksLayoutShift == true && enableBookmarks == false) {
     document.getElementById("search-container").style.top = "50vh";
     document.getElementById("search-container").style.transform =
         "translate(-50%, -50%)";
-
-    document.getElementById("greetings-container").style.transform =
-        "translate(-50%, 75%)";
+    setTimeout(() => {
+        if (!greetingsShown) return;
+        document.getElementById("greetings-container").style.transform =
+            "translate(-50%, 75%)";
+    }, 25);
 }
 
 //set the theme

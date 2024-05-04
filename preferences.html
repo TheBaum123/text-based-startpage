@@ -51,13 +51,6 @@
         </div>
     </div>
 
-    <div id="disable-quote-container" class="settings-container">
-        <div id="enable-quote-wrapper" class="setting-container">
-            <input type="checkbox" id="enable-quote">
-            <label for="enable-quote">Enable Quote</label>
-        </div>
-    </div>
-
     <div id="change-theme-container" class="settings-container">
         <div id="theme-selector-wrapper" class="setting-container">
             <label for="theme-selector">Theme: </label>
@@ -121,13 +114,17 @@
     </div>
 
     <div id="bookmark-settings-wrapper" class="settings-container">
-        <div class="setting-container">
-            <label for="enable-bookmarks-checkbox">Enable Bookmark box (disabling also hides quotes): </label>
-            <input type="checkbox" name="enable-bookmarks" id="enable-bookmarks-checkbox">
+        <div id="enable-quote-wrapper" class="setting-container">
+            <input type="checkbox" id="enable-quote">
+            <label for="enable-quote">Enable Quote</label>
         </div>
         <div class="setting-container">
-            <label for="enable-bookmarks-layoutshift-checkbox">Shift layout when bookmarks are disabled: </label>
+            <input type="checkbox" name="enable-bookmarks" id="enable-bookmarks-checkbox">
+            <label for="enable-bookmarks-checkbox">Enable Bookmark box (disabling also hides quotes)</label>
+        </div>
+        <div class="setting-container">
             <input type="checkbox" name="enable-bookmarks" id="enable-bookmarks-layoutshift-checkbox">
+            <label for="enable-bookmarks-layoutshift-checkbox">Shift layout when bookmarks are disabled</label>
         </div>
     </div>
     <!--
