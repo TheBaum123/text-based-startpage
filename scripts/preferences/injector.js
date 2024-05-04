@@ -6,6 +6,7 @@ let scriptsToInject = [
     "changeTheme",
     "customTitle",
     "customWallpapers",
+    "bookmarks",
 ];
 let stylesToInject = ["main", "themes"];
 
