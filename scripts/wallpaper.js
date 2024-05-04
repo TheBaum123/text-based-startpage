@@ -31,9 +31,4 @@ setTimeout(() => {
             JSON.stringify(wallpapersCycleIndex)
         );
     }
-
-    localStorage.setItem(
-        "text-startpage:wallpapers",
-        JSON.stringify(wallpapersLinksArray)
-    );
 }, 10);
