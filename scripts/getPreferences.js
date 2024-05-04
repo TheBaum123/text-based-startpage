@@ -67,6 +67,9 @@ let bookmarks = JSON.parse(localStorage.getItem("text-startpage:bookmarks"));
 let enableBookmarks = JSON.parse(
     localStorage.getItem("text-startpage:enableBookmarks")
 );
+let enableBookmarksLayoutShift = JSON.parse(
+    localStorage.getItem("text-startpage:enableBookmarksLayoutShift")
+);
 if (!bookmarks) {
     const xhr = new XMLHttpRequest();
     xhr.open("GET", "json/defaultBookmarks.json");
@@ -93,9 +96,15 @@ if (!bookmarks) {
 // remove bookmarks box (including quotes) if disabled
 if (enableBookmarks == false) {
     document.body.removeChild(document.getElementById("bookmarks-container"));
-    /* document.getElementById("search-container").style.top = "50vh";
+}
+
+if (enableBookmarksLayoutShift == true) {
+    document.getElementById("search-container").style.top = "50vh";
     document.getElementById("search-container").style.transform =
-        "translate(-50%, -50%)"; */
+        "translate(-50%, -50%)";
+
+    document.getElementById("greetings-container").style.transform =
+        "translate(-50%, 75%)";
 }
 
 //set the theme
