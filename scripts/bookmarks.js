@@ -1,5 +1,5 @@
 setTimeout(() => {
-    if (!enableBookmarks) return;
+    if (enableBookmarks == false) return;
     for (let i = 0; i < Object.keys(bookmarks).length; i++) {
         const categoryDiv = document.createElement("div");
         const categoryHeading = document.createElement("span");
