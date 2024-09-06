@@ -129,6 +129,9 @@ if (enableCustomTitle) {
     if (customTitle) {
         document.title = customTitle;
         console.log(customTitle);
+        if (customTitle == "" || customTitle == " ") {
+            document.title = "​";
+        }
     } else {
         document.title = "​";
     }
